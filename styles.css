@@ -34,6 +34,7 @@ body {
     flex-shrink: 0;
     transform-origin: center center;
     background-color: #ffffff;
+    background-image: linear-gradient(#ffffff, #ffffff); /* Force white on aggressive mobile dark modes */
     display: flex;
     flex-direction: column;
     align-items: center;
