@@ -33,7 +33,7 @@ body {
     height: 900px;
     flex-shrink: 0;
     transform-origin: center center;
-    background-color: transparent;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
