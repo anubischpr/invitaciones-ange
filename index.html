@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="invitation-container">
+    <div class="invitation-wrapper">
+        <div class="invitation-container">
         <!-- Top Text -->
         <p class="top-text">Te invito a mi 12° cumpleaños</p>
 
@@ -100,6 +101,30 @@
             
             container.classList.add('animate');
         });
+
+        // Responsive Scaling
+        function resizeContainer() {
+            var wrapper = document.querySelector('.invitation-wrapper');
+            var container = document.querySelector('.invitation-container');
+            // Base design size
+            var baseWidth = 500;
+            var baseHeight = 900;
+            
+            // Available space
+            var winWidth = window.innerWidth;
+            var winHeight = window.innerHeight;
+            
+            // Calculate scale to fit within the screen maintaining aspect ratio
+            var scale = Math.min(winWidth / baseWidth, winHeight / baseHeight);
+            
+            // Apply scale
+            container.style.transform = 'scale(' + scale + ')';
+        }
+
+        window.addEventListener('resize', resizeContainer);
+        // Initial call
+        resizeContainer();
     </script>
+    </div> <!-- End wrapper -->
 </body>
 </html>
