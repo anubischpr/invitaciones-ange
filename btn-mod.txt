@@ -1,0 +1,21 @@
+.btn-location {
+    position: absolute;
+    bottom: 195px;
+    top: auto;
+    left: 158px;
+    width: 273px;
+    height: 41px;
+    margin: 0;
+    z-index: 20;
+}
+
+.btn-rsvp {
+    position: absolute;
+    bottom: 247px;
+    top: auto;
+    left: 142px;
+    width: 350px;
+    height: 44px;
+    margin: 0;
+    z-index: 20;
+}
