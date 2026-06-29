@@ -1,130 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitación Cumpleaños - Angela</title>
-    
-    <!-- OpenGraph Metadata -->
-    <meta property="og:title" content="¡Cumpleaños de Angela!">
-    <meta property="og:description" content="¡Te esperamos para celebrar juntos! Confirma tu asistencia.">
-    <meta property="og:image" content="https://anubischpr.github.io/invitaciones-ange/assets/og-thumbnail.png">
-    <meta property="og:url" content="https://anubischpr.github.io/invitaciones-ange/">
-    <meta property="og:type" content="website">
-    
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="invitation-wrapper">
-        <div class="invitation-container">
-        <!-- Top Text -->
-        <p class="top-text">Te invito a mi 12° cumpleaños</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Invitación Cumpleaños - Angela</title>
 
-        <!-- Decorative Assets Top -->
-        <img src="assets/sello.png" alt="Sello" class="asset sello">
-        <img src="assets/clouds.png" alt="Clouds" class="asset clouds clouds-top-right">
-        <img src="assets/clouds.png" alt="Clouds" class="asset clouds clouds-mid-left">
-        
-        <!-- Typography: Main Title -->
-        <div class="title-container">
-            <img src="assets/Angela.svg" alt="Angela" class="svg-title">
-        </div>
+        <!-- OpenGraph Metadata -->
+        <meta property="og:title" content="¡Cumpleaños de Angela!" />
+        <meta
+            property="og:description"
+            content="¡Te esperamos para celebrar juntos! Confirma tu asistencia."
+        />
+        <meta
+            property="og:image"
+            content="https://anubischpr.github.io/invitaciones-ange/assets/og-thumbnail.png"
+        />
+        <meta
+            property="og:url"
+            content="https://anubischpr.github.io/invitaciones-ange/"
+        />
+        <meta property="og:type" content="website" />
 
-        <!-- Date Details -->
-        <div class="date-container">
-            <div class="dotted-line"></div>
-            <div class="details-row">
-                <span>SÁBADO</span>
-                <span class="divider"></span>
-                <span>04 DE JULIO</span>
-                <span class="divider"></span>
-                <span>4 PM a 6 PM</span>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="invitation-wrapper">
+            <div class="invitation-container">
+                <!-- Top Text -->
+                <p class="top-text">Te invito a mi 12° cumpleaños</p>
+
+                <!-- Decorative Assets Top -->
+                <img src="assets/sello.png" alt="Sello" class="asset sello" />
+                <img
+                    src="assets/clouds.png"
+                    alt="Clouds"
+                    class="asset clouds clouds-top-right"
+                />
+                <img
+                    src="assets/clouds.png"
+                    alt="Clouds"
+                    class="asset clouds clouds-mid-left"
+                />
+
+                <!-- Typography: Main Title -->
+                <div class="title-container">
+                    <img
+                        src="assets/Angela.svg"
+                        alt="Angela"
+                        class="svg-title"
+                    />
+                </div>
+
+                <!-- Date Details -->
+                <div class="date-container">
+                    <div class="dotted-line"></div>
+                    <div class="details-row">
+                        <span>SÁBADO</span>
+                        <span class="divider"></span>
+                        <span>05 DE JULIO</span>
+                        <span class="divider"></span>
+                        <span>4 PM a 6 PM</span>
+                    </div>
+                    <div class="dotted-line"></div>
+                </div>
+
+                <!-- Location Details -->
+                <div class="location-container">
+                    <p class="location-text">
+                        LiveSpace La Mar<br />
+                        Calle José Domingo Choquehuanca 444,<br />
+                        al frente de Burguer Boy
+                    </p>
+                </div>
+
+                <!-- Typography: Subtitle -->
+                <div class="subtitle-container">
+                    <img
+                        src="assets/te_esperamos_gradient.svg"
+                        alt="Te esperamos!"
+                        class="svg-subtitle"
+                    />
+                </div>
+
+                <!-- Bottom Assets -->
+                <img
+                    src="assets/balloons.png"
+                    alt="Balloons Left"
+                    class="asset balloons balloons-left"
+                />
+                <img
+                    src="assets/balloons.png"
+                    alt="Balloons Right"
+                    class="asset balloons balloons-right"
+                />
+                <img
+                    src="assets/cesped.png"
+                    alt="Cesped"
+                    class="asset cesped"
+                />
+                <img
+                    src="assets/naruto.png"
+                    alt="Naruto"
+                    class="asset naruto"
+                />
+                <img
+                    src="assets/kurama.png"
+                    alt="Kurama"
+                    class="asset kurama"
+                />
+
+                <!-- Action Buttons -->
+                <div class="actions">
+                    <a
+                        href="https://maps.app.goo.gl/48x6T3tJwAeWyZSEA"
+                        class="btn btn-location"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span class="icon">📍</span> VER UBICACIÓN
+                    </a>
+                    <a
+                        href="https://wa.me/51900191510?text=¡Hola!%20Confirmo%20mi%20asistencia%20al%20cumpleaños%20de%20Angela."
+                        class="btn btn-rsvp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span class="icon">🎟️</span> CONFIRMAR ASISTENCIA
+                    </a>
+                </div>
             </div>
-            <div class="dotted-line"></div>
+
+            <!-- Intro Curtain -->
+            <div id="intro-curtain">Toca para abrir la invitación</div>
+
+            <!-- Background Music -->
+            <audio id="bg-music" src="assets/naruto-music.m4a" loop></audio>
+
+            <script>
+                document
+                    .getElementById("intro-curtain")
+                    .addEventListener("click", function () {
+                        var curtain = document.getElementById("intro-curtain");
+                        var bgMusic = document.getElementById("bg-music");
+                        var container = document.querySelector(
+                            ".invitation-container",
+                        );
+
+                        curtain.style.opacity = "0";
+                        setTimeout(function () {
+                            curtain.style.display = "none";
+                        }, 500);
+
+                        bgMusic.play().catch(function (error) {
+                            console.log("Audio playback failed:", error);
+                        });
+
+                        container.classList.add("animate");
+                    });
+
+                // Responsive Scaling
+                function resizeContainer() {
+                    var wrapper = document.querySelector(".invitation-wrapper");
+                    var container = document.querySelector(
+                        ".invitation-container",
+                    );
+                    // Base design size
+                    var baseWidth = 500;
+                    var baseHeight = 900;
+
+                    // Available space
+                    var winWidth = window.innerWidth;
+                    var winHeight = window.innerHeight;
+
+                    // Calculate scale to fit within the screen maintaining aspect ratio
+                    var scale = Math.min(
+                        winWidth / baseWidth,
+                        winHeight / baseHeight,
+                    );
+
+                    // Apply scale
+                    container.style.transform = "scale(" + scale + ")";
+                }
+
+                window.addEventListener("resize", resizeContainer);
+                // Initial call
+                resizeContainer();
+            </script>
         </div>
-        
-        <!-- Location Details -->
-        <div class="location-container">
-            <p class="location-text">
-                LiveSpace La Mar<br>
-                Calle José Domingo Choquehuanca 444,<br>
-                al frente de Burguer Boy
-            </p>
-        </div>
-
-        <!-- Typography: Subtitle -->
-        <div class="subtitle-container">
-            <img src="assets/te_esperamos_gradient.svg" alt="Te esperamos!" class="svg-subtitle">
-        </div>
-
-
-        <!-- Bottom Assets -->
-        <img src="assets/balloons.png" alt="Balloons Left" class="asset balloons balloons-left">
-        <img src="assets/balloons.png" alt="Balloons Right" class="asset balloons balloons-right">
-        <img src="assets/cesped.png" alt="Cesped" class="asset cesped">
-        <img src="assets/naruto.png" alt="Naruto" class="asset naruto">
-        <img src="assets/kurama.png" alt="Kurama" class="asset kurama">
-
-        <!-- Action Buttons -->
-        <div class="actions">
-            <a href="https://maps.app.goo.gl/48x6T3tJwAeWyZSEA" class="btn btn-location" target="_blank" rel="noopener noreferrer">
-                <span class="icon">📍</span> VER UBICACIÓN
-            </a>
-            <a href="https://wa.me/51900191510?text=¡Hola!%20Confirmo%20mi%20asistencia%20al%20cumpleaños%20de%20Angela." class="btn btn-rsvp" target="_blank" rel="noopener noreferrer">
-                <span class="icon">🎟️</span> CONFIRMAR ASISTENCIA
-            </a>
-        </div>
-    </div>
-
-    <!-- Intro Curtain -->
-    <div id="intro-curtain">
-        Toca para abrir la invitación
-    </div>
-
-    <!-- Background Music -->
-    <audio id="bg-music" src="assets/naruto-music.m4a" loop></audio>
-
-    <script>
-        document.getElementById('intro-curtain').addEventListener('click', function() {
-            var curtain = document.getElementById('intro-curtain');
-            var bgMusic = document.getElementById('bg-music');
-            var container = document.querySelector('.invitation-container');
-            
-            curtain.style.opacity = '0';
-            setTimeout(function() {
-                curtain.style.display = 'none';
-            }, 500);
-
-            bgMusic.play().catch(function(error) {
-                console.log("Audio playback failed:", error);
-            });
-            
-            container.classList.add('animate');
-        });
-
-        // Responsive Scaling
-        function resizeContainer() {
-            var wrapper = document.querySelector('.invitation-wrapper');
-            var container = document.querySelector('.invitation-container');
-            // Base design size
-            var baseWidth = 500;
-            var baseHeight = 900;
-            
-            // Available space
-            var winWidth = window.innerWidth;
-            var winHeight = window.innerHeight;
-            
-            // Calculate scale to fit within the screen maintaining aspect ratio
-            var scale = Math.min(winWidth / baseWidth, winHeight / baseHeight);
-            
-            // Apply scale
-            container.style.transform = 'scale(' + scale + ')';
-        }
-
-        window.addEventListener('resize', resizeContainer);
-        // Initial call
-        resizeContainer();
-    </script>
-    </div> <!-- End wrapper -->
-</body>
+        <!-- End wrapper -->
+    </body>
 </html>
